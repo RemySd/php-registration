@@ -63,7 +63,7 @@ if (!empty($_POST) && empty($errors)) {
 
     <form method="POST">
         <label for="email">Email</label>
-        <input type="email" name="email" required>
+        <input type="email" name="email" value="<?php if ($_POST && !empty($errors)) echo $_POST['email'] ?>" required>
         <label for="password">Password</label>
         <input type="password" name="password" required>
         <input type="submit" value="Envoyer !">
