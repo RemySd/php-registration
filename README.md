@@ -13,12 +13,12 @@ Clone the project
 Créer une base de données + créer la table users
 => voir le fichier dump.sql
 
-## Deployment
+## Deploiement
 
-To deploy this project run
+Lancer la commande suivante pour démarrer ce projet
 
 ```bash
   php -S localhost:8000
 ```
 
-Go to https://127.0.0.1:8000  
+Aller sur https://127.0.0.1:8000  
