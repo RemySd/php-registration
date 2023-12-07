@@ -27,7 +27,7 @@ if (!empty($_POST) && empty($errors)) {
 
     $statement = $pdo->prepare('INSERT INTO users VALUES (null, :email, :password)');
     $statement->bindValue(':email', $_POST['email']);
-    $statement->bindValue(':password', $_POST['password']);
+    $statement->bindValue(':password', $hashedPassword);
     $isSuccess = $statement->execute();
 
     if ($isSuccess == false) {
