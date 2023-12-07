@@ -1,0 +1,1 @@
+<p>Inscription validé !</p>
